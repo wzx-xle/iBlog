@@ -9,7 +9,8 @@ var requireConfig = {
     paths: {
         jquery: 'libs/jquery/jquery-2.2.4.min',
         bootstrap: 'libs/bootstrap/3.3.5/js/bootstrap.min',
-        vue: 'libs/vue/vue-1.0.26.min'
+        vue: 'libs/vue/vue-1.0.26.min',
+        cmn: 'common'
     },
     shim: {
         bootstrap: {
