@@ -45,5 +45,6 @@
 	<mvc:resources mapping="/scripts/**" location="/scripts/" />
     <mvc:resources mapping="/styles/**" location="/styles/" />
     <mvc:resources mapping="/pages/**" location="/pages/" />
+    <mvc:resources mapping="/admin/**" location="/admin/" />
 	<mvc:resources mapping="/index.html" location="/" />
 </beans>
