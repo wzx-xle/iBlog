@@ -6,6 +6,6 @@
  */
 require.config(requireConfig);
 
-require(['jquery', 'vue', 'bootstrap'], function ($) {
+require(['jquery', 'vue', 'bootstrap', 'cmn'], function ($) {
     console.log($().jquery);
 });
