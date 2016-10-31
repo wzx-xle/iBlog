@@ -307,7 +307,7 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
                 <configuration>
-                    <path>/${final.name}</path>
+                    <path>/</path>
                     <port>8020</port>
                     <uriEncoding>UTF-8</uriEncoding>
                     <contextReloadable>true</contextReloadable>
