@@ -13,7 +13,7 @@
 
     <!-- 默认的视图解析器 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/view/" />
+        <property name="prefix" value="/WEB-INF/jsp/" />
         <property name="suffix" value=".jsp" />
         <property name="viewClass" value="org.springframework.web.servlet.view.InternalResourceView" />
         <property name="order" value="1" />
@@ -41,10 +41,5 @@
         </mvc:message-converters>
     </mvc:annotation-driven>
 
-    <mvc:resources mapping="/images/**" location="/images/" />
-	<mvc:resources mapping="/scripts/**" location="/scripts/" />
-    <mvc:resources mapping="/styles/**" location="/styles/" />
-    <mvc:resources mapping="/pages/**" location="/pages/" />
-    <mvc:resources mapping="/admin/**" location="/admin/" />
-	<mvc:resources mapping="/index.html" location="/" />
+    <mvc:resources mapping="/static/**" location="/static/" />
 </beans>
