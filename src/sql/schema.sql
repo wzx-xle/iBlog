@@ -78,9 +78,9 @@ CREATE TABLE `t_blog_tag` (
 DROP TABLE IF EXISTS `t_code`;
 CREATE TABLE `t_code` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
-  `code` varchar(10) NOT NULL COMMENT '编码',
-  `name` varchar(50) NOT NULL COMMENT '名称',
-  `type` varchar(10) NOT NULL COMMENT '类别',
+  `code` varchar(30) NOT NULL COMMENT '编码',
+  `value` varchar(50) NOT NULL COMMENT '参数值',
+  `type` varchar(30) NOT NULL COMMENT '类别',
   `type_name` varchar(50) NOT NULL COMMENT '类别名称',
   `delete` bit(1) NOT NULL DEFAULT b'0' COMMENT '删除',
   `deleted_time` timestamp NULL DEFAULT NULL COMMENT '删除时间',

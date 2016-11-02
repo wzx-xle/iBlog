@@ -7,7 +7,7 @@
 
     <context:property-placeholder location="classpath*:db.properties"/>
 
-    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <property name="driverClassName" value="${driverClassName}"/>
         <property name="url" value="${jdbcUrl}" />
         <property name="username" value="${jdbcUsername}" />

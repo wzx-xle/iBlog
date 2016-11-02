@@ -16,10 +16,10 @@
   <%@ include file="/WEB-INF/jsp/inc/meta.jsp" %>
   <%@ include file="/WEB-INF/jsp/inc/style.jsp" %>
 
-  <title>Wxyz's Blog</title>
+  <title>${TITLE}</title>
 </head>
 <body>
-首页
+首页 ${AUTHOR}
 <%@ include file="/WEB-INF/jsp/inc/script.jsp" %>
 </body>
 </html>
