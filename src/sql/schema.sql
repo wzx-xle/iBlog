@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : iblog
+Source Server         : root_localhost
 Source Server Version : 50534
 Source Host           : localhost:3306
 Source Database       : iblog
@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50534
 File Encoding         : 65001
 
-Date: 2016-10-17 18:45:54
+Date: 2016-11-03 21:24:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -79,17 +79,22 @@ DROP TABLE IF EXISTS `t_code`;
 CREATE TABLE `t_code` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键',
   `code` varchar(30) NOT NULL COMMENT '编码',
-  `value` varchar(50) NOT NULL COMMENT '参数值',
+  `value` varchar(50) NOT NULL COMMENT '名称',
   `type` varchar(30) NOT NULL COMMENT '类别',
   `type_name` varchar(50) NOT NULL COMMENT '类别名称',
   `delete` bit(1) NOT NULL DEFAULT b'0' COMMENT '删除',
   `deleted_time` timestamp NULL DEFAULT NULL COMMENT '删除时间',
+  `created_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '添加时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='系统参数表';
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='系统参数表';
 
 -- ----------------------------
 -- Records of t_code
 -- ----------------------------
+INSERT INTO `t_code` VALUES ('1', 'LOGIN_NAME', 'test', 'ACCOUNT', '登陆账号', '', null, '2016-11-01 22:27:18');
+INSERT INTO `t_code` VALUES ('2', 'PASSWORD', '123456', 'ACCOUNT', '登陆账号', '', null, '2016-11-01 22:27:49');
+INSERT INTO `t_code` VALUES ('3', 'TITLE', 'Test\'s Blog', 'BLOG_METADATA', '博客元信息', '', null, '2016-11-01 22:28:44');
+INSERT INTO `t_code` VALUES ('4', 'AUTHOR', 'Test', 'BLOG_METADATA', '博客元信息', '', null, '2016-11-02 21:20:27');
 
 -- ----------------------------
 -- Table structure for `t_comment`
