@@ -5,8 +5,9 @@
   See the file LICENSE.
 --%>
 <%--
-  User: wxyz 2016-10-31_22:44
-  Time: 2016/8/17 22:07
+  User:
+    wxyz 2016-10-31_22:44
+    wxyz 2016-11-08_22:15
 --%>
 <script src="${cdn}/jquery/2.2.4/jquery.min.js" type="text/javascript"></script>
 <script src="${cdn}/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
