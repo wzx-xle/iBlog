@@ -12,11 +12,15 @@
 <%-- taglibs --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<c:set var="cdn" value="${ctx}/static/scripts/libs"/>
+<c:if test="${fn:length(LIBS_CDN) > 0}">
+    <c:set var="cdn" value="${LIBS_CDN}"/>
+</c:if>
 
 <%-- meta --%>
 <meta charset="UTF-8">
@@ -29,12 +33,13 @@
 </script>
 
 <link href="${ctx}/static/images/favicon.ico?v=0.1" rel="shortcut icon" type="image/x-icon" />
-<link href="${ctx}/static/scripts/libs/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
-<link href="${ctx}/static/styles/common.css?v=0.1" rel="stylesheet" />
+<link href="${cdn}/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
-<script src="${ctx}/static/scripts/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
-<script src="${ctx}/static/scripts/libs/respond.js/1.4.2/respond.min.js"></script>
+<script src="${cdn}/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="${cdn}/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+
+<link href="${ctx}/static/styles/common.css?v=0.1" rel="stylesheet" />
