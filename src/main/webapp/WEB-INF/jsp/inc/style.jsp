@@ -6,7 +6,6 @@
 --%>
 <%--
   User: wxyz 2016-10-31_22:39
-  Time: 2016/8/17 22:07
 --%>
 <script type="text/javascript">
   var CONTEXTPATH = '${pageContext.request.contextPath}';
