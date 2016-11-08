@@ -29,6 +29,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
+<meta name="ketwords" content="${KEYWORDS}" />
+<meta name="description" content="${SUBTITLE}" />
+<meta name="author" content="${AUTHOR}" />
+<meta name="robots" content="all" />
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="${TITLE}">
+<meta property="og:url" content="${CURRENT_URL}">
+<meta property="og:site_name" content="${TITLE}">
+<meta property="og:description" content="${SUBTITLE}">
+
+
 <%-- style --%>
 <script type="text/javascript">
     var CONTEXTPATH = '${pageContext.request.contextPath}';

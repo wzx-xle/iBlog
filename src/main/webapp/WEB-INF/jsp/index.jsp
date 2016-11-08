@@ -18,7 +18,7 @@
     <title>${TITLE}</title>
 </head>
 <body>
-首页 ${AUTHOR} ${cdn}
+首页 ${AUTHOR} <br>
 <%@ include file="/WEB-INF/jsp/inc/script.jsp" %>
 </body>
 </html>
