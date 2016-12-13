@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2001-2016 wxyz <hyhjwzx@126.com>
- * <p>
+ * <p/>
  * This program can be distributed under the terms of the GNU GPL Version 2.
  * See the file LICENSE.
  */
@@ -13,15 +13,15 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * 字典表
+ * 标签表
  *
- * @author wxyz 2016-11-01_22:50
+ * @author wxyz 2016-12-13_21:26
  * @since 0.1
  */
 @Entity
-@Table(name = "t_code")
+@Table(name = "t_tag")
 @Data
-public class Code implements Serializable {
+public class Tag implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -29,24 +29,9 @@ public class Code implements Serializable {
     private Integer id;
 
     /**
-     * 编码
+     * 标签名
      */
-    private String code;
-
-    /**
-     * 值
-     */
-    private String value;
-
-    /**
-     * 类型
-     */
-    private String type;
-
-    /**
-     * 类型名称
-     */
-    private String typeName;
+    private String name;
 
     /**
      * 已删除

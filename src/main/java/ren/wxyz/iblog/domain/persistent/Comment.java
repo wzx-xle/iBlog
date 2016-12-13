@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2001-2016 wxyz <hyhjwzx@126.com>
- * <p>
+ * <p/>
  * This program can be distributed under the terms of the GNU GPL Version 2.
  * See the file LICENSE.
  */
@@ -13,48 +13,52 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * 字典表
+ * 评论表
  *
- * @author wxyz 2016-11-01_22:50
+ * @author wxyz 2016-12-13_21:31
  * @since 0.1
  */
 @Entity
-@Table(name = "t_code")
+@Table(name = "t_comment")
 @Data
-public class Code implements Serializable {
-    private static final long serialVersionUID = 1L;
+public class Comment implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     /**
-     * 编码
+     * 博客ID
      */
-    private String code;
+    private Integer blogId;
 
     /**
-     * 值
+     * 回复的评论ID
      */
-    private String value;
+    private Integer commentId;
 
     /**
-     * 类型
+     * 评论人名称
      */
-    private String type;
+    private String name;
 
     /**
-     * 类型名称
+     * 评论人编号
      */
-    private String typeName;
+    private String nameNo;
 
     /**
-     * 已删除
+     * 评论内容
+     */
+    private String content;
+
+    /**
+     * 创建时间
+     */
+    private Timestamp createdTime;
+
+    /**
+     * 是否已删除
      */
     private Boolean deleted;
-
-    /**
-     * 更新时间
-     */
-    private Timestamp updatedTime;
 }

@@ -1,6 +1,6 @@
 /**
  * Copyright (C) 2001-2016 wxyz <hyhjwzx@126.com>
- * <p>
+ * <p/>
  * This program can be distributed under the terms of the GNU GPL Version 2.
  * See the file LICENSE.
  */
@@ -13,15 +13,15 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 /**
- * 字典表
+ * 博客内容
  *
- * @author wxyz 2016-11-01_22:50
+ * @author wxyz 2016-12-13_20:23
  * @since 0.1
  */
 @Entity
-@Table(name = "t_code")
+@Table(name = "t_blog_content")
 @Data
-public class Code implements Serializable {
+public class BlogContent implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -29,32 +29,22 @@ public class Code implements Serializable {
     private Integer id;
 
     /**
-     * 编码
+     * 格式
      */
-    private String code;
+    private String format;
 
     /**
-     * 值
+     * 摘要信息
      */
-    private String value;
+    private String summary;
 
     /**
-     * 类型
+     * 博客内容
      */
-    private String type;
+    private String content;
 
     /**
-     * 类型名称
+     * 编辑时间
      */
-    private String typeName;
-
-    /**
-     * 已删除
-     */
-    private Boolean deleted;
-
-    /**
-     * 更新时间
-     */
-    private Timestamp updatedTime;
+    private Timestamp editTime;
 }
