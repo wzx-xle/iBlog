@@ -34,6 +34,11 @@ public class Blog implements Serializable {
     private String title;
 
     /**
+     * 摘要信息
+     */
+    private String summary;
+
+    /**
      * 是否原创
      */
     private Boolean original;

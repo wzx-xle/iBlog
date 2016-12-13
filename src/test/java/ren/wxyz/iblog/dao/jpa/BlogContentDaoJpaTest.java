@@ -13,9 +13,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import ren.wxyz.iblog.domain.persistent.BlogContent;
 
-import javax.transaction.Transactional;
-
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 /**
  * 测试博客内容访问接口
@@ -25,7 +23,6 @@ import static org.junit.Assert.*;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath*:spring/applicationContext.xml")
-@Transactional
 public class BlogContentDaoJpaTest {
 
     @Autowired

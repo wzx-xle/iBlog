@@ -34,11 +34,6 @@ public class BlogContent implements Serializable {
     private String format;
 
     /**
-     * 摘要信息
-     */
-    private String summary;
-
-    /**
      * 博客内容
      */
     @Column(columnDefinition = "text")
