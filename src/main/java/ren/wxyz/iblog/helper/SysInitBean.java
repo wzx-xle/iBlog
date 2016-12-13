@@ -29,6 +29,7 @@ public class SysInitBean implements ServletContextAware {
 
     @Override
     public void setServletContext(ServletContext servletContext) {
+        // 初始化字典信息
         codeService.init(servletContext);
     }
 }

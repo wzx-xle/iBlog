@@ -26,11 +26,17 @@ import javax.servlet.ServletContext;
 @Slf4j
 public class CodeServiceImpl implements CodeService {
 
+    /**
+     * 非敏感字典类型
+     */
     private static final String[] NOT_SENSITIVE_TYPE = new String[] {"BLOG_METADATA"};
 
     @Autowired
     private CodeDaoJpa codeDaoJpa;
 
+    /**
+     * Servlet上下文实例
+     */
     private ServletContext sc;
 
     @Override
@@ -39,6 +45,9 @@ public class CodeServiceImpl implements CodeService {
         init();
     }
 
+    /**
+     * 读取数据库字典信息并填充到servlet上下文实例中
+     */
     @Transactional(readOnly = true)
     private void init() {
         Iterable<Code> codes = codeDaoJpa.findByTypeIn(NOT_SENSITIVE_TYPE);

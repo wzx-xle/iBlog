@@ -18,6 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class IndexController {
 
+    /**
+     * 首页
+     *
+     * @return 首页视图
+     */
     @RequestMapping("/")
     public String index() {
         return "index";
