@@ -57,7 +57,9 @@ public class CodeServiceImpl implements CodeService {
         }
 
         for (Code code : codes) {
-            sc.setAttribute(code.getCode(), code.getValue());
+            if (!code.getDeleted()) {
+                sc.setAttribute(code.getCode(), code.getValue());
+            }
         }
     }
 }
