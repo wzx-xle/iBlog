@@ -7,13 +7,13 @@
 package ren.wxyz.iblog.dao.jpa;
 
 import org.springframework.data.repository.CrudRepository;
-import ren.wxyz.iblog.domain.persistent.Blog;
+import ren.wxyz.iblog.domain.persistent.BlogContent;
 
 /**
- * 博客访问接口
+ * 博客内容访问接口
  *
- * @author wxyz 2016-12-13_21:44
+ * @author wxyz 2016-12-13_21:47
  * @since 0.1
  */
-public interface BlogDaoJpa extends CrudRepository<Blog, Integer> {
+public interface BlogContentDaoJpa extends CrudRepository<BlogContent, Integer> {
 }
