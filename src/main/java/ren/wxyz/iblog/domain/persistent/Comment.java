@@ -45,6 +45,7 @@ public class Comment implements Serializable {
     /**
      * 评论人编号
      */
+    @Column(columnDefinition = "char")
     private String nameNo;
 
     /**

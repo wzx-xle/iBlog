@@ -41,6 +41,7 @@ public class BlogContent implements Serializable {
     /**
      * 博客内容
      */
+    @Column(columnDefinition = "text")
     private String content;
 
     /**
