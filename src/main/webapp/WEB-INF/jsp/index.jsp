@@ -18,7 +18,14 @@
     <title>${TITLE}</title>
 </head>
 <body>
-首页 ${AUTHOR} <br>
+<div class="container">
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="${ctx}">${TITLE}</a>
+        </div>
+    </div>
+    首页 ${AUTHOR} <br>
+</div>
 <%@ include file="/WEB-INF/jsp/inc/script.jsp" %>
 </body>
 </html>
