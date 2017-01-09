@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse">
             <form action="search.jsp" class="navbar-form navbar-right" role="search">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="搜索">
+                    <input type="text" class="form-control" placeholder="搜索" name="key">
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
