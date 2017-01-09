@@ -11,19 +11,15 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
-<html lang="zh_CN">
+<html lang="zh-CN">
 <head>
     <%@ include file="/WEB-INF/jsp/inc/header.jsp" %>
 
     <title>${TITLE}</title>
 </head>
 <body>
-<div class="container">
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="${ctx}">${TITLE}</a>
-        </div>
-    </div>
+<%@ include file="navbar.jsp" %>
+<div class="container" style="margin-top: 50px">
     首页 ${AUTHOR} <br>
 </div>
 <%@ include file="/WEB-INF/jsp/inc/script.jsp" %>
