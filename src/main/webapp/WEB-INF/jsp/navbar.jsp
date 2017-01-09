@@ -16,7 +16,7 @@
             <a href="index.html" class="navbar-brand">${TITLE}</a>
         </div>
         <div class="collapse navbar-collapse">
-            <form action="#" class="navbar-form navbar-right" role="search">
+            <form action="search.jsp" class="navbar-form navbar-right" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="搜索">
                 </div>
