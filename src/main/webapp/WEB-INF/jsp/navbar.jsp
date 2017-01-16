@@ -10,6 +10,7 @@
   @auther wxyz 2017-01-09_20:21
   @since 0.1
 --%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
