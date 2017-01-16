@@ -10,7 +10,7 @@
     wxyz 2016-11-08_22:15
 --%>
 <script src="${cdn}/jquery/1.11.3/jquery.min.js" type="text/javascript"></script>
-<script src="${cdn}/flat-ui/2.2.2/js/flat-ui.min.js" type="text/javascript"></script>
+<script src="${cnd}/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="${cdn}/headroom/0.9.3/headroom.min.js" type="text/javascript"></script>
 <script src="${cdn}/headroom/0.9.3/jQuery.headroom.min.js" type="text/javascript"></script>
 <script src="${cdn}/vue/1.0.26/vue.min.js" type="text/javascript"></script>
