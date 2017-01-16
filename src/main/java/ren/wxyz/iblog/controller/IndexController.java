@@ -28,16 +28,31 @@ public class IndexController {
         return "index";
     }
 
+    /**
+     * 档案
+     *
+     * @return
+     */
     @RequestMapping("/archives")
     public String archives() {
         return "public/archives";
     }
 
+    /**
+     * 标签
+     *
+     * @return
+     */
     @RequestMapping("/tags")
     public String tags() {
         return "public/tags";
     }
 
+    /**
+     * 我
+     *
+     * @return
+     */
     @RequestMapping("/about")
     public String about() {
         return "public/about";

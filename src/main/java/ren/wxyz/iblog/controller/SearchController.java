@@ -19,6 +19,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class SearchController {
 
+    /**
+     * 搜索入口
+     *
+     * @param key 关键词
+     * @return
+     */
     @RequestMapping("/search")
     public ModelAndView search(String key) {
         ModelAndView mv = new ModelAndView("public/search");
