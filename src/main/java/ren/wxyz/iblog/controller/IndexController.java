@@ -27,4 +27,19 @@ public class IndexController {
     public String index() {
         return "index";
     }
+
+    @RequestMapping("/archives")
+    public String archives() {
+        return "public/archives";
+    }
+
+    @RequestMapping("/tags")
+    public String tags() {
+        return "public/tags";
+    }
+
+    @RequestMapping("/about")
+    public String about() {
+        return "public/about";
+    }
 }

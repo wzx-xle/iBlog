@@ -18,7 +18,7 @@
     <title>${TITLE}</title>
 </head>
 <body>
-<%@ include file="navbar.jsp" %>
+<%@ include file="public/navbar.jsp" %>
 <div class="container" style="margin-top: 50px">
     首页 ${AUTHOR} <br>
 </div>

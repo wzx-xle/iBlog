@@ -14,19 +14,19 @@
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a href="index.html" class="navbar-brand">${TITLE}</a>
+            <a href="${ctx}/" class="navbar-brand">${TITLE}</a>
         </div>
         <div class="collapse navbar-collapse">
-            <form action="search.jsp" class="navbar-form navbar-right" role="search">
+            <form action="${ctx}/search" class="navbar-form navbar-right" role="search">
                 <div class="input-group">
                     <input type="text" class="form-control" placeholder="搜索" name="key">
                 </div>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.jsp">主页</a></li>
-                <li><a href="archives.jsp">归档</a></li>
-                <li><a href="tags.jsp">标签</a></li>
-                <li><a href="about.jsp">我</a></li>
+                <li><a href="${ctx}/">主页</a></li>
+                <li><a href="${ctx}/archives">归档</a></li>
+                <li><a href="${ctx}/tags">标签</a></li>
+                <li><a href="${ctx}/about">我</a></li>
             </ul>
         </div>
     </div>
